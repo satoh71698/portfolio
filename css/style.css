@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: YuMincho, "Yu Mincho", serif;
+  font-style: normal;
   font-weight: 700;
   color: #fff;
   background-color: #3e3e3e;
@@ -31,6 +32,12 @@ img {
 
 li {
   list-style: none;
+}
+
+.c-menu span {
+  width: 33px;
+  height: 3px;
+  background-color: #fff;
 }
 
 /*--------------------------------------*

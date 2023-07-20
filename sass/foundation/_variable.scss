@@ -18,21 +18,22 @@ $Gray: #d6d6d6;
 $Navy: #3e3e3e;
 
 /*----------------------------- font ----------------------------------*/
-@function fontSize($minFont) {
-  $minWidth: 300;
-  $maxWidth: 3000;
-  $minFontSize: $minFont * 1px;
-  $fontVw: round($minFont/$minWidth * 100 * 1000) / 1000;
-  $maxFontSize: round($maxWidth * ($fontVw / 100)) * 1px;
-  @return clamp(#{$minFontSize}, #{$fontVw}vw, #{$maxFontSize});
-}
 
 /*----------------------------- size ----------------------------------*/
-@function spaceSize($minSpace) {
-  $minWidth: 300;
-  $maxWidth: 700;
-  $minSpaceSize: $minSpace * 1px;
-  $spaceVw: round($minSpace/$minWidth * 100 * 1000) / 1000;
-  $maxSpaceSize: round($maxWidth * ($spaceVw / 100)) * 1px;
-  @return clamp(#{$minSpaceSize}, #{$spaceVw}vw, #{$maxSpaceSize});
+@function spWidth($spWidth) {
+  $sp: 375px;
+  $widthSize: $spWidth * 1px;
+  @return ($widthSize / $sp) * 100vw;
+}
+
+@function tbWidth($tbWidth) {
+  $tb: 834px;
+  $tbWidthSize: $tbWidth * 1px;
+  @return ($tbWidthSize / $tb) * 100vw;
+}
+
+@function pcWidth($pcWidth) {
+  $pc: 1920px;
+  $pcWidthSize: $pcWidth * 1px;
+  @return ($pcWidthSize / $pc) * 100vw;
 }
