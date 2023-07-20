@@ -5,12 +5,11 @@ html {
 }
 
 body {
-  font-family: source-han-sans-japanese, sans-serif;
+  font-family: YuMincho, /* Mac用 */ "Yu Mincho", /* Windows用 */ serif;
   font-style: normal;
   font-weight: 700;
   color: #fff;
   background-color: $Navy;
-  position: relative;
 }
 
 a {

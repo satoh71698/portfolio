@@ -7,12 +7,11 @@ html {
 }
 
 body {
-  font-family: source-han-sans-japanese, sans-serif;
+  font-family: YuMincho, "Yu Mincho", serif;
   font-style: normal;
   font-weight: 700;
   color: #fff;
   background-color: #3e3e3e;
-  position: relative;
 }
 
 a {
@@ -34,6 +33,12 @@ img {
 
 li {
   list-style: none;
+}
+
+.c-menu span {
+  width: 33px;
+  height: 3px;
+  background-color: #fff;
 }
 
 /*--------------------------------------*

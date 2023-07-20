@@ -1,0 +1,9 @@
+@use "./../../foundation/variable" as *;
+
+.c-menu {
+  span {
+    width: 33px;
+    height: 3px;
+    background-color: $White;
+  }
+}
