@@ -7,17 +7,28 @@
 /*--------------------------------------*
 * layout
 *--------------------------------------*/
-
+@use "./layout/l-header";
 /*--------------------------------------*
 * object
 *--------------------------------------*/
 /*-------------------
 * component
 -------------------*/
-@use "./object/component/c-menu"; /*-------------------
+@use "./object/component/c-menu";
+@use "./object/component/c-inner";
+@use "./object/component/c-font";
+@use "./object/component/c-center";
+@use "./object/component/c-margin";
+@use "./object/component/c-en";
+/*-------------------
 * project
 -------------------*/
-
+@use "./object/project/p-mainvisual";
+@use "./object/project/p-about";
+@use "./object/project/p-works";
+@use "./object/project/p-skill";
 /*-------------------
 * utility
 -------------------*/
+@use "./object/utility/u-yellow";
+@use "./object/utility/u-vertical-rl";

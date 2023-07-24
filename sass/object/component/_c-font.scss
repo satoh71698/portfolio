@@ -1,0 +1,16 @@
+@use "./../../foundation/variable" as *;
+
+.c-font {
+  &__h2 {
+    font-size: fontSize(60);
+    letter-spacing: 7.5px;
+  }
+  &__h3 {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  &__p {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+}
