@@ -1,0 +1,10 @@
+@use "./../../foundation/variable" as *;
+
+.p-about {
+  display: grid;
+  grid-template-columns: 1fr spWidth(70);
+
+  &__title {
+    grid-column: 2 / 3;
+  }
+}

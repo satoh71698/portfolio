@@ -1,0 +1,23 @@
+@use "./../../foundation/variable" as *;
+
+.p-works {
+  display: grid;
+  grid-template-columns: spWidth(112) 1fr;
+
+  &__title {
+    grid-column: 1 / 2;
+  }
+  &__ring {
+    width: spWidth(90);
+  }
+  &__item {
+    margin-bottom: 30px;
+    img {
+      width: spWidth(233);
+      height: spWidth(142);
+    }
+    p {
+      margin-top: 15px;
+    }
+  }
+}

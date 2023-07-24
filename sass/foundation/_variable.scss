@@ -16,8 +16,17 @@ $Black: #000000;
 $darkGray: #242424;
 $Gray: #d6d6d6;
 $Navy: #3e3e3e;
+$Yellw: #ffe200;
 
 /*----------------------------- font ----------------------------------*/
+@function fontSize($minFont) {
+  $minWidth: 375;
+  $maxWidth: 1980;
+  $minFontSize: $minFont * 1px;
+  $fontVw: round($minFont/$minWidth * 100 * 1000) / 1000;
+  $maxFontSize: round($maxWidth * ($fontVw / 100)) * 1px;
+  @return clamp(#{$minFontSize}, #{$fontVw}vw, #{$maxFontSize});
+}
 
 /*----------------------------- size ----------------------------------*/
 @function spWidth($spWidth) {
