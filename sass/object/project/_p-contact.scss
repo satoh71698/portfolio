@@ -1,0 +1,15 @@
+@use "./../../foundation/variable" as *;
+
+.p-contact {
+  padding-top: 100px;
+
+  &__button {
+    padding: 15px 50px;
+    border: 1px solid $White;
+    border-radius: 1000px;
+    display: inline;
+    @include pc {
+      padding: 20px 90px;
+    }
+  }
+}

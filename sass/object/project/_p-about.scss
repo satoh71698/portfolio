@@ -3,8 +3,28 @@
 .p-about {
   display: grid;
   grid-template-columns: 1fr spWidth(70);
+  @include pc {
+    grid-template-columns: pcWidth(280) 1fr pcWidth(280);
+  }
 
   &__title {
     grid-column: 2 / 3;
+    @include pc {
+      grid-column: 3 / 4;
+    }
+  }
+
+  &__content {
+    @include pc {
+      grid-column: 2 / 3;
+    }
+  }
+
+  &__text {
+    @include pc {
+      padding: 40px 10%;
+    }
+  }
+  &__js {
   }
 }
