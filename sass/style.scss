@@ -8,6 +8,8 @@
 * layout
 *--------------------------------------*/
 @use "./layout/l-header";
+@use "./layout/l-menu";
+@use "./layout/l-footer";
 /*--------------------------------------*
 * object
 *--------------------------------------*/
@@ -20,6 +22,7 @@
 @use "./object/component/c-center";
 @use "./object/component/c-margin";
 @use "./object/component/c-en";
+@use "./object/component/c-bg";
 /*-------------------
 * project
 -------------------*/
@@ -27,8 +30,49 @@
 @use "./object/project/p-about";
 @use "./object/project/p-works";
 @use "./object/project/p-skill";
+@use "./object/project/p-contact";
+@use "./object/project/p-backText";
+@use "./object/project/p-scroll";
+@use "./object/project/p-single";
+@use "./object/project/p-menu";
 /*-------------------
 * utility
 -------------------*/
 @use "./object/utility/u-yellow";
 @use "./object/utility/u-vertical-rl";
+
+.headline {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  .rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background: $Yellow;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-101%);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* 垂直方向のスクロールバーの幅 */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #444;
+}
+
+.pin-spacer {
+  height: auto !important;
+  padding: 0 !important;
+}

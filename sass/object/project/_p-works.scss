@@ -4,20 +4,58 @@
   display: grid;
   grid-template-columns: spWidth(112) 1fr;
 
+  @include pc {
+    grid-template-columns: pcWidth(280) 1fr pcWidth(280);
+    justify-items: center;
+  }
+
   &__title {
     grid-column: 1 / 2;
+    @include pc {
+      margin-left: pcWidth(150);
+    }
   }
   &__ring {
     width: spWidth(90);
+    @include pc {
+      display: none;
+    }
+    img {
+      animation: 3s linear infinite rotation;
+    }
   }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   &__item {
     margin-bottom: 30px;
-    img {
-      width: spWidth(233);
-      height: spWidth(142);
+    @include pc {
+      margin-bottom: 60px;
+      width: pcWidth(500);
     }
     p {
       margin-top: 15px;
+    }
+  }
+  &__content {
+    max-width: 420px;
+    @include pc {
+      max-width: none;
+      grid-column: 2 / 3;
+    }
+  }
+
+  &__ringPC {
+    display: none;
+    @include pc {
+      display: block;
+      grid-column: 3 / 4;
     }
   }
 }

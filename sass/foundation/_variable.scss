@@ -12,11 +12,12 @@
 
 /*----------------------------- color ----------------------------------*/
 $White: #fff;
+$Ivory: #f8f8f8;
 $Black: #000000;
 $darkGray: #242424;
 $Gray: #d6d6d6;
 $Navy: #3e3e3e;
-$Yellw: #ffe200;
+$Yellow: #ffe200;
 
 /*----------------------------- font ----------------------------------*/
 @function fontSize($minFont) {
@@ -42,7 +43,7 @@ $Yellw: #ffe200;
 }
 
 @function pcWidth($pcWidth) {
-  $pc: 1920px;
+  $pc: 1520px;
   $pcWidthSize: $pcWidth * 1px;
   @return ($pcWidthSize / $pc) * 100vw;
 }

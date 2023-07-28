@@ -1,0 +1,18 @@
+@use "./../../foundation/variable" as *;
+
+.p-backText {
+  color: #4b4b4b;
+  padding-top: 60px;
+  &__s {
+    font-size: fontSize(14);
+  }
+  &__m {
+    font-size: fontSize(24);
+  }
+  &__l {
+    font-size: fontSize(28);
+  }
+  p {
+    padding: 5px 0;
+  }
+}

@@ -1,5 +1,5 @@
 btn = document.querySelector('.c-menu')
-hg = document.querySelector('.l-hgMenu')
+hg = document.querySelector('.p-menu')
 li = document.querySelector(".l-hgMenu__js")
 
 
@@ -19,16 +19,3 @@ btn.addEventListener("click", function () {
         });
     }
 })
-
-// $(".c-menu").click(function () {
-//     $(this).toggleClass("is-active");
-//     $(".l-hgMenu").toggleClass("is-active");
-//     $(".p-back").toggleClass("is-active");
-// });
-
-// $(".l-hgmenu a").click(function () {
-//     $(".c-menu").removeClass("is-active");
-//     $(".l-hgMenu").removeClass("is-active");
-//     $(".p-back").removeClass("is-active");
-// });
-

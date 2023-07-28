@@ -1,6 +1,12 @@
+@use "./../../foundation/variable" as *;
+
 .p-mainvisual {
   background-image: url(./../../../img/mainvisual.png);
   background-position: center;
   background-size: cover;
   height: calc(100vh - 65px);
+
+  @include tb {
+    height: calc(100vh - 80px);
+  }
 }

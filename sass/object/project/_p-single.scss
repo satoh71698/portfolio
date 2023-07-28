@@ -1,0 +1,53 @@
+@use "./../../foundation/variable" as *;
+
+.p-single {
+  &__mainvisual {
+    position: relative;
+    img {
+      height: calc(100vh - 65px);
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  &__content {
+    h3 {
+      font-size: 20px;
+      line-height: 40px;
+      padding: 0 3%;
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 30px;
+      padding: 0 3%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    img {
+      margin-top: 40px;
+    }
+    .wp-block-buttons {
+      background-color: $Ivory;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .wp-block-button__link {
+      color: $Navy;
+      background-color: $Ivory;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: spWidth(10) spWidth(40);
+      font-size: 1.125em;
+      display: inline;
+      border: 1px solid $Navy;
+    }
+  }
+}

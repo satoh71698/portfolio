@@ -1,4 +1,19 @@
 @use "./../foundation/variable" as *;
 
 .l-menu {
+  width: 33px;
+  height: 3px;
+  @include pc {
+    display: none;
+  }
+  &::before {
+    width: 33px;
+    height: 3px;
+    top: -14px;
+  }
+  &::after {
+    width: 33px;
+    height: 3px;
+    top: 12px;
+  }
 }

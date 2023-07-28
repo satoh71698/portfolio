@@ -1,0 +1,34 @@
+@use "./../../foundation/variable" as *;
+
+.p-scroll {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  span {
+    position: absolute;
+    left: -40px;
+    bottom: 30px;
+    color: $White;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 14px;
+    width: 3px;
+    height: 20px;
+    background: $White;
+    transform: skewX(55deg);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 150px;
+    background: $White;
+  }
+}

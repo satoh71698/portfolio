@@ -1,3 +1,8 @@
+@use "./../../foundation/variable" as *;
+
 .c-inner {
   padding: 0 3%;
+  @include pc {
+    padding: 0 6%;
+  }
 }
