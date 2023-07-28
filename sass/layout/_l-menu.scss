@@ -3,17 +3,35 @@
 .l-menu {
   width: 33px;
   height: 3px;
+  z-index: 10000;
   @include pc {
     display: none;
   }
   &::before {
+    z-index: 10000;
     width: 33px;
     height: 3px;
     top: -14px;
+    transition: 0.3s;
   }
   &::after {
+    z-index: 10000;
     width: 33px;
     height: 3px;
     top: 12px;
+    transition: 0.3s;
+  }
+
+  &.is-active {
+    height: 0;
+
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      top: -3px;
+    }
   }
 }

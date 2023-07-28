@@ -8,15 +8,4 @@
   @include tb {
     height: 80px;
   }
-  &__rinkPC {
-    display: none;
-    @include pc {
-      display: flex;
-    }
-    a {
-      margin-right: 60px;
-      font-size: 30px;
-      font-weight: bold;
-    }
-  }
 }

@@ -10,6 +10,10 @@ body {
   font-weight: 700;
   color: #fff;
   background-color: $Navy;
+
+  &.is-active {
+    overflow: hidden;
+  }
 }
 
 a {
