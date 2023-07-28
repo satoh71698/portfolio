@@ -1,7 +1,4 @@
-// -------------------------------------
-// GSAPバージョン
-// -------------------------------------
-// プラグインを登録
+
 gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("DOMContentLoaded", async () => {
     const stagger = 0.05;
@@ -13,7 +10,7 @@ window.addEventListener("DOMContentLoaded", async () => {
             .timeline({
                 scrollTrigger: {
                     trigger: el,
-                    start: "top 100%",
+                    start: () => "top 100%",
                 },
             })
             .fromTo(
@@ -83,7 +80,7 @@ gsap.from(".p-about__js span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: '.p-about__js',
-        start: 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
+        start: () => 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
 
     }
 });
@@ -94,7 +91,7 @@ gsap.from(".p-works__js span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: '.p-works__js',
-        start: 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
+        start: () => 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
 
     }
 });
@@ -105,7 +102,7 @@ gsap.from(".p-skill__js span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: '.p-skill__js',
-        start: 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
+        start: () => 'top 50%', //triggerの上端が、画面の高さの75%の位置に来たら
 
     }
 });
@@ -116,7 +113,7 @@ gsap.from(".p-strong__js", {
     x: -52,
     scrollTrigger: {
         trigger: '.p-strong__js',
-        start: 'top 75%', //triggerの上端が、画面の高さの75%の位置に来たら
+        start: () => 'top 75%', //triggerの上端が、画面の高さの75%の位置に来たら
 
     }
 });
@@ -131,7 +128,7 @@ gsap.from(".h3__js span", {
     },
     scrollTrigger: {
         trigger: ".h3__js",
-        start: "top 100%",
+        start: () => "top 100%",
     },
 });
 
@@ -150,7 +147,7 @@ gsap
     .timeline({
         scrollTrigger: {
             trigger: ".p-about",
-            start: "top 75%",
+            start: () => "top 75%",
         },
     })
     .fromTo(
@@ -184,10 +181,9 @@ gsap.to(".p-works__ringPC img", {
     rotation: 3600,
     scrollTrigger: {
         trigger: '.p-works__ringPC',
-        start: 'top 50%',
+        start: () => 'top 50%',
         scrub: true, //スクロール量に応じて動かす
         pin: true, //ピン留め
-        markers: true,
         endTrigger: ".p-works",
         end: "bottom bottom",
     }
@@ -196,10 +192,9 @@ gsap.to(".p-works__ringPC img", {
 gsap.to(".p-works__title h2", {
     scrollTrigger: {
         trigger: '.p-works__title',
-        start: 'top 3%',
+        start: () => 'top 3%',
         scrub: true, //スクロール量に応じて動かす
         pin: true, //ピン留め
-        markers: true,
         endTrigger: ".p-works",
         end: "center",
     }

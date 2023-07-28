@@ -2,11 +2,38 @@
 
 .p-menu {
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
-  left: 0;
-  height: 100vh;
+  left: 100%;
   width: 100vw;
-  background-color: $White;
-  opacity: 0.3;
+  background-color: rgba($Navy, 0.5);
+  transition: 0.5s;
+  &.is-active {
+    left: 0;
+  }
+  @include pc {
+    position: static;
+    z-index: 0;
+    width: auto;
+    background-color: none;
+  }
+  &__content {
+    height: 100vh;
+    color: $White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include pc {
+      flex-direction: row;
+      height: auto;
+    }
+    a {
+      font-size: 26px;
+      margin: 15px 0;
+      @include pc {
+        margin: 0 30px;
+      }
+    }
+  }
 }
