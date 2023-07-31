@@ -207,7 +207,7 @@ li {
 }
 
 .p-mainvisual {
-  background-image: url(./../img/mainvisual.png);
+  background-image: url(./../img/mainvisual.webp);
   background-position: center;
   background-size: cover;
   height: calc(100vh - 65px);
