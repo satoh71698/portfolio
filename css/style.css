@@ -108,7 +108,7 @@ li {
 }
 
 .c-inner {
-  padding: 0 3%;
+  padding: 0 5%;
 }
 @media only screen and (min-width: 1280px) {
   .c-inner {
@@ -540,6 +540,8 @@ li {
   position: absolute;
   bottom: 10%;
   left: 10%;
+  background-color: rgba(62, 62, 62, 0.4);
+  padding: 10px 20px;
 }
 .p-single__content h3 {
   font-size: 20px;
@@ -551,6 +553,7 @@ li {
 @media only screen and (min-width: 768px) {
   .p-single__content h3 {
     padding: 0 6%;
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -569,12 +572,15 @@ li {
 @media only screen and (min-width: 768px) {
   .p-single__content p {
     padding: 0 6%;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .p-single__content p {
+    font-size: 18px;
     padding: 0 20%;
     margin: 100px 0;
+    line-height: 40px;
   }
 }
 .p-single__content img {

@@ -21,12 +21,21 @@
         </a>
         <div class="c-menu l-menu"></div>
         <div class="p-menu">
+            <?php if(is_front_page() ): ?>
             <ul class="p-menu__content c-en">
                 <li><a href="#About">ABOUT</a></li>
                 <li><a href="#Works">WORKS</a></li>
                 <li><a href="#Skill">SKILL</a></li>
-                <li><a href="#Contact">CONTACT</a></li>
+                <li><a href="<?php echo esc_url( home_url( 'contact' ) ); ?>">CONTACT</a></li>
             </ul>
+            <?php else: ?>
+            <ul class="p-menu__content c-en">
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#About">ABOUT</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#Works">WORKS</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#Skill">SKILL</a></li>
+                <li><a href="<?php echo esc_url( home_url( 'contact' ) ); ?>">CONTACT</a></li>
+            </ul>
+            <?php endif; ?>
         </div>
     </header>
     <!-- /header -->

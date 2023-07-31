@@ -16,6 +16,8 @@
     position: absolute;
     bottom: 10%;
     left: 10%;
+    background-color: rgba($Navy, 0.4);
+    padding: 10px 20px;
   }
   &__content {
     h3 {
@@ -26,6 +28,7 @@
       margin-bottom: 40px;
       @include tb {
         padding: 0 6%;
+        font-size: 24px;
       }
       @include pc {
         padding: 0 20%;
@@ -40,10 +43,13 @@
       margin-bottom: 40px;
       @include tb {
         padding: 0 6%;
+        font-size: 16px;
       }
       @include pc {
+        font-size: 18px;
         padding: 0 20%;
         margin: 100px 0;
+        line-height: 40px;
       }
     }
     img {
