@@ -59,10 +59,17 @@
     .wp-block-buttons {
       background-color: $Ivory;
       text-align: center;
-      padding: 100px 0;
+      padding-top: 80px;
+      padding-bottom: 20px;
 
       @include pc {
         padding: 150px 0;
+      }
+    }
+    .wp-block-button {
+      margin-bottom: 60px;
+      @include pc {
+        margin-bottom: 0;
       }
     }
     .wp-block-button__link {
