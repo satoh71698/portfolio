@@ -210,6 +210,5 @@ gsap.from(".p-works__item", {
     scrollTrigger: {
         trigger: ".p-works__content",
         start: () => "top 75%",
-        markers: true,
     },
 });
