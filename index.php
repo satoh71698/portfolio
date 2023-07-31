@@ -56,7 +56,7 @@
                     while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
                     <li>
                         <a href="<?php echo get_the_permalink( ); ?>" class="p-works__item">
-                            <?php the_post_thumbnail(); ?>
+                            <?php the_post_thumbnail("eyecatch"); ?>
                             <p><?php the_title( ); ?></p>
                         </a>
                     </li>

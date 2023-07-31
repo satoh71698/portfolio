@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---------------------------- screen ---------------------------------*/
 /*----------------------------- color ----------------------------------*/
 /*----------------------------- font ----------------------------------*/
@@ -315,6 +314,11 @@ li {
   }
 }
 
+.pin-spacer {
+  height: auto !important;
+  padding: 0 !important;
+}
+
 .p-skill__item {
   margin-top: 40px;
   display: grid;
@@ -378,6 +382,23 @@ li {
     top: 0;
     writing-mode: vertical-rl;
   }
+}
+
+.headline {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.headline .rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  background: #ffe200;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-101%);
 }
 
 .p-contact {
@@ -590,11 +611,20 @@ li {
 .p-single__content .wp-block-buttons {
   background-color: #f8f8f8;
   text-align: center;
-  padding: 100px 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 1280px) {
   .p-single__content .wp-block-buttons {
     padding: 150px 0;
+  }
+}
+.p-single__content .wp-block-button {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1280px) {
+  .p-single__content .wp-block-button {
+    margin-bottom: 0;
   }
 }
 .p-single__content .wp-block-button__link {
@@ -696,39 +726,4 @@ li {
 -------------------*/
 /*-------------------
 * utility
--------------------*/
-.headline {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-.headline .rect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  display: block;
-  background: #ffe200;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-101%);
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-  /* 垂直方向のスクロールバーの幅 */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #999;
-  border-radius: 5px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #444;
-}
-
-.pin-spacer {
-  height: auto !important;
-  padding: 0 !important;
-}/*# sourceMappingURL=style.css.map */
+-------------------*//*# sourceMappingURL=style.css.map */

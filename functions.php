@@ -29,13 +29,3 @@
 } 
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' ); 
 
-
-// function hamburgerSite_title( $title ) {
-//     if ( is_front_page() && is_home() ) { 
-//         $title = get_bloginfo( 'name', 'display' );
-//     } elseif ( is_singular() ) { 
-//         $title = single_post_title( '', false );
-//     }
-//         return $title;
-// }
-// add_filter( 'pre_get_document_title', 'hamburgerSite_title' );  

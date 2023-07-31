@@ -200,3 +200,16 @@ gsap.to(".p-works__title h2", {
     }
 });
 
+gsap.from(".p-works__item", {
+    y: 100,
+    autoAlpha: 0,
+    duration: 1,
+    delay: 0.2,
+    ease: "power4.out",
+    stagger: 0.8, // 0.02秒ごとに出現
+    scrollTrigger: {
+        trigger: ".p-works__content",
+        start: () => "top 75%",
+        markers: true,
+    },
+});
