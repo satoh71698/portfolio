@@ -4,10 +4,12 @@
   &__mainvisual {
     position: relative;
     img {
-      height: calc(100vh - 65px);
       background-size: cover;
       background-position: center;
       object-fit: cover;
+      @include pc {
+        height: calc(100vh - 80px);
+      }
     }
   }
   &__title {

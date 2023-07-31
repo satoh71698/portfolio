@@ -1,7 +1,8 @@
 @use "./../../foundation/variable" as *;
 
 .p-contact {
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   &__button {
     padding: 15px 50px;
@@ -12,4 +13,77 @@
       padding: 20px 90px;
     }
   }
+
+  &__title {
+    margin: 50px 0;
+  }
+
+  &__content {
+    @include tb {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.p-contact {
+  margin-bottom: 50px;
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    @include tb {
+      margin-bottom: 30px;
+    }
+  }
+  &__flex {
+    @include tb {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    font-weight: 700;
+    @include tb {
+      width: 30%;
+    }
+  }
+  &__form {
+    @include tb {
+      width: 70%;
+    }
+    input {
+      padding: 0 3%;
+      border: 1px solid $Navy;
+      border-radius: 10px;
+      font-size: 18px;
+      width: 100%;
+      @include pc {
+        font-size: 22px;
+        width: 100%;
+      }
+    }
+    textarea {
+      padding: 3%;
+      border: 1px solid $Navy;
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+  &__button--Send {
+    p {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      input {
+        background-color: $Navy;
+        color: $White;
+        padding: 8px 50px;
+      }
+    }
+  }
+}
+.wpcf7-response-output {
+  border: 2px solid $Navy !important;
+  padding: 10px 5px !important;
 }

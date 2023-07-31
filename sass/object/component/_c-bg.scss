@@ -1,16 +1,16 @@
 .c-bg {
   &:nth-of-type(3n-2) {
-    background-image: url(./../../../img/item1.png);
+    background-image: url(./../img/item1.png);
     background-position: center;
     background-size: cover;
   }
   &:nth-of-type(3n-1) {
-    background-image: url(./../../../img/item2.png);
+    background-image: url(./../img/item2.png);
     background-position: center;
     background-size: cover;
   }
   &:nth-of-type(3n) {
-    background-image: url(./../../../img/item3.png);
+    background-image: url(./../img/item3.png);
     background-position: center;
     background-size: cover;
   }
