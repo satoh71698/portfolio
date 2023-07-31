@@ -196,7 +196,7 @@ gsap.to(".p-works__title h2", {
         scrub: true, //スクロール量に応じて動かす
         pin: true, //ピン留め
         endTrigger: ".p-works",
-        end: "top",
+        end: "bottom 100%",
     }
 });
 
