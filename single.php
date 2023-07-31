@@ -4,7 +4,7 @@
     <main>
         <div class="p-single__mainvisual">
             <?php the_post_thumbnail(  ); ?>
-            <h2 class="c-font__singleTitle p-single__title"><?php the_title( ); ?></h2>
+            <h1 class="c-font__singleTitle p-single__title"><?php the_title( ); ?></h1>
         </div>
         <div class="p-single__content">
             <?php the_content(); ?>

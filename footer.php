@@ -1,5 +1,5 @@
      <div class="p-contact c-center">
-            <a class="p-contact__button" href="">お問い合わせはこちら</a>
+            <a class="p-contact__button" href="<?php echo esc_url( home_url( 'contact' ) ); ?>">お問い合わせはこちら</a>
         </div>
         <div class="p-backText c-inner">
             <p class="p-backText__s c-en">I USED TO FEEL LIKE I COULD DO ANYTHING,</p>
