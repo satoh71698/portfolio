@@ -40,6 +40,8 @@
 -------------------*/
 @use "./object/utility/u-yellow";
 @use "./object/utility/u-vertical-rl";
+@use "./object/utility/u-back";
+@use "./object/utility/u-color";
 
 .headline {
   position: relative;
