@@ -1,7 +1,7 @@
 btn = document.querySelector('.c-menu')
 hg = document.querySelector('.p-menu')
 by = document.querySelector('body')
-link = document.querySelector('.p-menu li a')
+link = document.querySelector('.p-menu__content')
 
 btn.addEventListener("click", function () {
     if (btn.classList.contains("is-active")) {
