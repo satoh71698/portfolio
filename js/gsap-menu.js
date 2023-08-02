@@ -1,17 +1,23 @@
 btn = document.querySelector('.c-menu')
 hg = document.querySelector('.p-menu')
 by = document.querySelector('body')
+link = document.querySelector('.p-menu__content')
 
 btn.addEventListener("click", function () {
     if (btn.classList.contains("is-active")) {
-        btn.classList.toggle("is-active")
-        hg.classList.toggle("is-active")
-        by.classList.toggle("is-active")
+        btn.classList.remove("is-active")
+        hg.classList.remove("is-active")
+        by.classList.remove("is-active")
     } else {
-        btn.classList.toggle("is-active")
-        hg.classList.toggle("is-active")
-        by.classList.toggle("is-active")
+        btn.classList.add("is-active")
+        hg.classList.add("is-active")
+        by.classList.add("is-active")
     }
+})
+link.addEventListener("click", function () {
+    btn.classList.remove("is-active")
+    hg.classList.remove("is-active")
+    by.classList.remove("is-active")
 })
 
 

@@ -24,8 +24,10 @@
     wp_enqueue_style( 'main_style', get_theme_file_uri ( '/css/style.css' ), array() ); 
     wp_enqueue_script( 'gsapjs', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js' , '', '3.11.3', true ); 
     wp_enqueue_script( 'scroll', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js' , '', '3.11.3', true ); 
-    wp_enqueue_script( 'gsap', get_theme_file_uri ( '/js/gsap.js' ),'', '1.0.0', true );
     wp_enqueue_script( 'gsap-menu', get_theme_file_uri ( '/js/gsap-menu.js' ),'', '1.0.0', true );
+    if ( is_home() || is_front_page() ){
+    wp_enqueue_script( 'gsap', get_theme_file_uri ( '/js/gsap.js' ),'', '1.0.0', true );
+    }
 } 
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' ); 
 
