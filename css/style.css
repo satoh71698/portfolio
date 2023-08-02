@@ -262,7 +262,6 @@ li {
 @media only screen and (min-width: 1280px) {
   .p-works__title {
     margin-left: 9.8684210526vw;
-    left: 0 !important;
   }
   .p-works__title h2 {
     margin: 0;

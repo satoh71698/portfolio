@@ -13,7 +13,6 @@
     grid-column: 1 / 2;
     @include pc {
       margin-left: pcWidth(150);
-      left: 0 !important;
       h2 {
         margin: 0;
       }
